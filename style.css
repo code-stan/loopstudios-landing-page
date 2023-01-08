@@ -538,19 +538,23 @@ h1{
         position: relative;
         /* left: 101%; */
     }
-    .social-links::after{
+    .social-links::after,
+     .fs-items::after{
         content: "";
         width: 1.5em;
         height: 2px;
         background-color: var(--White);
         position: absolute;
-        bottom: -1.8em;
-        left: 50%;
-        transform: translateX(-5%);
+        bottom: -10px;
+        left: 0%;
+        /* transform: translateX(-50%); */
         opacity: 0;
         transition: opacity var(--trans);
+        display: none;
     }
-    .social-links:hover::after{
+
+    .social-links:hover::after,
+    .fs-items:hover::after{
         opacity: 1;
     }
 }
